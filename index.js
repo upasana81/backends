@@ -13,7 +13,7 @@ const categoryRoute = require('./routes/categoryRoute')
 app.use(express.json())
 app.use(cors())
 app.use(categoryRoute)
-
+app.use(morgan('dev'))
 
    app.listen(port, ()=>{
       console.log("app started sucessfully.")
